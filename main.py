@@ -34,8 +34,8 @@ for index, key in enumerate(exampleDict):
 
 # End loop
 
-# In a nested dictionary, get the key with the highest/lowest inner volume. 
-# This is like lookupv in excel (?)
+# In a nested dictionary, get the key with the highest/lowest inner value. 
+# This is like vlookup in excel (?)
 max(exampleDict, key=lambda v: exampleDict[v]['some_inner_key'])
 
 
