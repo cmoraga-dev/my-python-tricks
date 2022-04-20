@@ -38,5 +38,17 @@ for index, key in enumerate(exampleDict):
 # This is like vlookup in excel (?)
 max(exampleDict, key=lambda v: exampleDict[v]['some_inner_key'])
 
-
+# I needed something like this, but I couldn't find it on Python.
+# So I found this, with some little adjustments, and it does the trick :D
+def isNumber (n):
+    '''
+    Custom function. Works with almost every object - as far as I know.
+    '''
+    try:
+        float(n)
+        return True
+    except ValueError:
+        return False
+    except TypeError:
+        return False
 
