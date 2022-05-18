@@ -38,6 +38,10 @@ for index, key in enumerate(exampleDict):
 # This is like vlookup in excel (?)
 max(exampleDict, key=lambda v: exampleDict[v]['some_inner_key'])
 
+# Get the min/max value of a nested dictionary
+max(float(v['some_inner_key']) for v in exampleDict.values()))
+
+
 # I needed something like this, but I couldn't find it on Python.
 # So I found this, added some little adjustments, and it does the trick :D
 def isNumber (n):
